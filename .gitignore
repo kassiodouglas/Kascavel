@@ -7,3 +7,5 @@
 
 @versions
 ENVKASS
+.env.development
+.env.production
