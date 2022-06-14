@@ -1,9 +1,8 @@
-# PyKassFramwork  (nome temporario kkk)
+# PyKassFramework  (nome temporario kkk)
 
 
 ## Ideia Base
-Ser uma aplicação de RPA low-code, onde atraves de uma interface web, seja possivel a criação do RPA, por meio do Selenium e Python, com interface em Flask. 
-
+Ser uma aplicação de base para desenvolvimento web em Python.
 
 <br><br>
 
