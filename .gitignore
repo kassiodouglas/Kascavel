@@ -1,0 +1,9 @@
+
+!*/
+!.env.example
+!.gitignore
+!*.MD
+!requirements.txt
+
+@versions
+ENVKASS
