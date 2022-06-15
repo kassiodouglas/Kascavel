@@ -1,4 +1,4 @@
-# PyKassFramework  (nome temporario kkk)
+# sSnakeFramework  (nome temporario kkk)
 
 
 ## Ideia Base
@@ -34,3 +34,43 @@ Para atualizar o arquivo requirements.txt
 ```
 pip freeze > requirements.txt 
 ```
+
+
+<br><br>
+
+## Comandos:
+____
+Criar um controlador
+```
+py main.py make controller [name]
+```
+Criar um model
+```
+py main.py make model [name]
+```
+Criar uma migração
+```
+py main.py make migration [name]
+```
+Criar um seeder
+```
+py main.py make seeder [name]
+```
+Listar rotas
+```
+py main.py list routes
+```
+Iniciar o server
+```
+py main.py server
+```
+Migrar banco de dados
+```
+py main.py migrate [fresh]
+```
+Ajuda geral
+```
+py main.py help
+```
+
+
