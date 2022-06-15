@@ -1,0 +1,6 @@
+from src.core.env import env
+
+%NAME% = {
+    "key":"value",
+    'key2':env('ENV_KEY','DEFAULT_KEY'),
+}
