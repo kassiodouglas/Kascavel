@@ -1,4 +1,6 @@
-from src.core.router import add_api
+from src.core.Router import Router
 
 
-#Adicionar as rotas de API aqui
+routes = [   
+]
+    

@@ -1,5 +1,8 @@
+from src.core.Router import Router
 from src.app.controllers.ErrorController import ErrorController
-from src.core.router import add_error
 
 
-add_error(404, ErrorController,'error.404')
+routes = [
+    Router.create_route(404, ErrorController,'error404'),    
+]
+    
