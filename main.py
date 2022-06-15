@@ -1,7 +1,7 @@
 import sys
-from src.core.manage import exec_terminal_line
+from src.core import Manage
 
-exec_terminal_line(sys.argv)
+Manage().exec_terminal_line(sys.argv)
 
 
     
