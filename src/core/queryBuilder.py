@@ -32,7 +32,7 @@ class QueryBuilder():
         try:
             return self.conn.execute(sql)   
         except Exception as err:
-            hlp.log.printlog(rf"[[ERRO]] {err}","db")
+            
             return False 
                
                
@@ -376,7 +376,7 @@ class QueryBuilder():
             self.conn.commit()
             return True
         except Exception as err:
-            hlp.log.printlog(rf"[[ERRO]] {err} | sql: {sql}","db")
+            
             return False
         
         
@@ -400,7 +400,7 @@ class QueryBuilder():
             self.conn.commit()
             return True
         except Exception as err:
-            hlp.log.printlog(rf"[[ERRO]] {err}","db")
+            
             return False
         
             
@@ -419,7 +419,7 @@ class QueryBuilder():
             # self.conn.commit()
             return True
         except Exception as err:
-            hlp.log.printlog(rf"[[ERRO]] {err}","db")
+            
             return False
         
 

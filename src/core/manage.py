@@ -9,6 +9,7 @@ class Manage():
     def __init__(self):
         self.routes = [web.routes, api.routes, error.routes]
 
+
     def exec_terminal_line(self, args):
         """Executa o comando do terminal"""
         method = args[1]  if len(args) > 1 else None    
@@ -31,8 +32,8 @@ class Manage():
         """Inicia o servidor"""      
 
         app = Flask(__name__, 
-                    static_folder=Storage.basePath('src/resources/static'),
-                    template_folder=Storage.basePath('src/resources/templates')
+                    static_folder=Storage.basePath('src/resources/assets'),
+                    template_folder=Storage.basePath('src/resources/views')
         )                
 
         Router().router(app, web.routes, api.routes, error.routes)
