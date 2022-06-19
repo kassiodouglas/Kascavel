@@ -13,7 +13,7 @@ SnakeFramework é um framework de aplicação web com sintaxe facil, organizada 
 
 ## Porque usar o SnakeFramework?
 
-O SnakeFramework valoriza a organização e os detalhes dos codigos, sem aquelas interações de todos os lados para uma unica pagina. Sobre esta problemática estruturamos todo o SnakeFramework. A sintaxe e simples e elegante e funcional tudo isso disponivel para seus melhores projetos. Os recursos ainda estão em desenvolvimento mas temos a missão de criar uma experiência maravilhosa para sua aplicação e seu desemvolvimento Back-End e Front-End.
+Nós da SnakeFramework valorizamos a organização e os detalhes dos codigos, sem aquelas interações de todos os lados para uma unica pagina. Sobre esta problemática estruturamos todo o SnakeFramework. A sintaxe e simples e elegante e funcional tudo isso disponivel para seus melhores projetos. Os recursos ainda estão em desenvolvimento mas temos a missão de criar uma experiência maravilhosa para sua aplicação e seu desemvolvimento Back-End e Front-End.
 
 
 ## Como Instalar
