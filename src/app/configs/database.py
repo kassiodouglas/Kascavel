@@ -1,6 +1,6 @@
 from src.core import Environment
 
-conn_db_mysql = {
+default = {
     'mysql': {
         'driver': 'mysql',
         'host': 'localhost',

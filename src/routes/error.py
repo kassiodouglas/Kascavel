@@ -3,6 +3,6 @@ from src.app.controllers.ErrorController import ErrorController
 
 
 routes = [
-    Router.create_route(404, ErrorController,'error404'),    
+    Router.add(404, ErrorController,'error404'),    
 ]
     

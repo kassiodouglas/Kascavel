@@ -1,10 +1,12 @@
-from src.core.Router import Router
-from src.app.controllers.InitialController import InitialController
-from src.app.controllers._Snake.AdminController import AdminController
+from ..core.Router import Router
+from ..app.controllers.InitialController import InitialController
+from ..routes._kaskavel_.web import routes as routes_admin
 
 
 routes = [
-    Router.create_route("/", InitialController,'initial'),       
-    Router.create_route("/admin", AdminController,'admin')  
+    Router.add("/", InitialController,'initial'),  
 ]
+
+#Rotas administrativas do framework
+routes.extend(routes_admin)
     

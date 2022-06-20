@@ -11,7 +11,7 @@ class ServerCommand(Command):
     server
         {--host=localhost : Host do servidor} 
         {--p|port=9000 : Porta do servidor}   
-        {--d|debug=False : Modo de debug}       
+        {--d|debug : Modo de debug}       
     """
     def handle(self):
         app = Flask(__name__, 
@@ -24,6 +24,6 @@ class ServerCommand(Command):
         app.run(
             host='localhost' if self.option('host') else self.option('host'),
             port=9000 if self.option('port') else self.option('port'),
-            debug=False if self.option('debug') else True
+            debug=True if self.option('debug') else False
         )
         
