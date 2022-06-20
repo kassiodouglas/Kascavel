@@ -1,11 +1,15 @@
-# sSnakeFramework  (nome temporario kkk)
+# SnakeFramework
 
 
 ## Ideia Base
 Ser uma aplicação de base para desenvolvimento web em Python.
-
 <br><br>
-
+## Objetivo Base
+SnakeFramework é um framework de aplicação web com sintaxe facil, organizada e elegante. Liberamos acesso para criar o que quiser em uma estrutura totalmente organizada.
+<br><br>
+## Porque usar o SnakeFramework?
+O SnakeFramework entende que valorizar a organização e os detalhes dos códigos, evita simultâneas interações de todos os lados propensas a erros. Sobre esta problemática estruturamos todo o SnakeFramework. A sintaxe e simples e elegante e funcional tudo isso disponivel para seus melhores projetos. Os recursos ainda estão em desenvolvimento mas temos a missão de criar uma experiência maravilhosa para sua aplicação e seu desemvolvimento Back-End e Front-End.
+<br><br>
 ## Como Instalar
 ____
 Rode no terminal do vs code os comandos abaixo:
