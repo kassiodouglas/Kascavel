@@ -1,11 +1,15 @@
-from src.core.commands.HelloCommand import HelloCommand
-from src.core.commands.ServerCommand import ServerCommand
-from src.core.commands.MakeCommand import MakeCommand
+#core/commands
 
+#Lista de pacotes
+packages = [
+    'HelloCommand',
+    'ServerCommand',
+    'MakeCommand',
+]
 
-
-#lista de comandos instalados
-commands = ['HelloCommand','ServerCommand','MakeCommand']
+#Faz o import dos comandos
+for pkg in packages: 
+    exec( rf"from src.core.commands.{pkg} import {pkg}") 
 
 
     

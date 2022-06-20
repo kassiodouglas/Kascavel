@@ -1,7 +1,23 @@
-from src.core.Storage import Storage
-from src.core.Environment import Environment
-from src.core.Manage import Manage
-from src.core.Router import Router
+#core
 
+#Lista de pacotes 
+packages = [
+    'Storage',
+    'Environment',
+    'Router',
+]
+
+#Faz o import dos pacotes
+for pkg in packages: 
+    exec( rf"from src.core.{pkg} import {pkg}") 
+
+
+    
+
+
+
+
+
+    
 
 
