@@ -3,6 +3,7 @@ from flask import Flask
 from src.routes import web, api, error
 from src.core.Router import Router
 from src.core.Storage import Storage
+import os
 
 class Manage():      
     
@@ -13,8 +14,8 @@ class Manage():
     def exec_terminal_line(self, args):
         """Executa o comando do terminal"""
         method = args[1]  if len(args) > 1 else None    
-        params = args[2:]    
-     
+        params = args[2:]   
+        
         
         if(method in console['commands_admin']):   
             run = getattr(self, method)  
@@ -62,18 +63,18 @@ class Manage():
             self.make_controller(params[1])  
             
         elif(params[0] == 'model'):  
-            make_model(params[1]) 
+            self.make_model(params) 
             
                 
         elif(params[0] == 'migration'):  
-            make_migration(params[1])   
+            self.make_migration(params)   
             
                 
         elif(params[0] == 'seeder'):  
-            make_seeder(params[1])   
+            self.make_seeder(params[1])   
             
         elif(params[0] == 'config'):  
-            make_config(params[1])   
+            self.make_config(params[1])   
             
                 
         else:  
@@ -86,18 +87,18 @@ class Manage():
         
     def make_controller(self, params): 
         """Cria um controller"""
-        print(rf'Criando Controller: {name}')     
+        print(rf'Criando Controller: {params[0]}')     
         
-        basepath = "D:\\ServerLocal\\Python\\PyKassFramework\\"
+        basepath = "D:\\ServerLocal\\Python\\sSnake"
         
         stub_file = open(rf"{basepath}\\src\\core\\stubs\\controller.stub", 'r+')    
         stub_content = stub_file.read()
         stub_file.close()
             
-        dir_name = name
+        dir_name = params[0]
         
-        if( "/" in name):
-            name_split = name.split('/')
+        if( "/" in params[0]):
+            name_split = params[0].split('/')
             dir_name = name_split[0] +"\\"+ name_split[1]        
             newdir = rf"{basepath}\\src\\app\\controllers\\{name_split[0]}"
             
@@ -107,7 +108,7 @@ class Manage():
             stub_content = stub_content.replace("%NAMECLASS%", name_split[1])
             
         else:        
-            stub_content = stub_content.replace("%NAMECLASS%", name)
+            stub_content = stub_content.replace("%NAMECLASS%", params[0])
         
 
         controler_file = open(rf"{basepath}\\src\\app\\controllers\\{dir_name}.py", 'w+')    
@@ -116,13 +117,43 @@ class Manage():
         
         
     def make_model(self, params): 
-        """Cria um model"""
-        print(rf'Criando model: {name}')
+        """Cria um model"""      
+        print(rf'Criando model: {params[1]}')
+        
+        
+        basepath = "D:\\ServerLocal\\Python\\sSnake"
+        
+        stub_file = open(rf"{basepath}\\src\\core\\stubs\\model.stub", 'r+')    
+        stub_content = stub_file.read()
+        stub_file.close()
+            
+        dir_name = params[1]
+        
+        if( "/" in params[1]):
+            name_split = params[1].split('/')
+            dir_name = name_split[0] +"\\"+ name_split[1]        
+            newdir = rf"{basepath}\\src\\app\\models\\{name_split[0]}"
+            
+            if(os.path.isdir(newdir) == False):
+                os.mkdir(newdir)
+                
+            stub_content = stub_content.replace("%MODELNAME%", name_split[1])
+            stub_content = stub_content.replace("%CONN%", params[2])
+           
+            
+        else:        
+            stub_content = stub_content.replace("%MODELNAME%", params[1])
+            stub_content = stub_content.replace("%CONN%", params[2])
+        
+
+        controler_file = open(rf"{basepath}\\src\\app\\models\\{dir_name}.py", 'w+')    
+        controler_file.writelines(stub_content)   
+        controler_file.close()
         
         
     def make_migration(self, params): 
         """Cria uma migration"""
-        print(rf'Criando migration: {name}')
+        print(rf'Criando migration: {params}')
         
         
     def make_seeder(self, params): 

@@ -1,2 +1,3 @@
-from src.app.config.app import *
-from src.app.config.console import *
+from ..config.app import *
+from ..config.console import *
+from ..config.database import *

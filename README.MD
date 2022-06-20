@@ -42,35 +42,35 @@ pip freeze > requirements.txt
 ____
 Criar um controlador
 ```
-py main.py make controller [name]
+py snake make controller [name]
 ```
 Criar um model
 ```
-py main.py make model [name]
+py snake make model [name]
 ```
 Criar uma migração
 ```
-py main.py make migration [name]
+py snake make migration [name]
 ```
 Criar um seeder
 ```
-py main.py make seeder [name]
+py snake make seeder [name]
 ```
 Listar rotas
 ```
-py main.py list routes
+py snake list routes
 ```
 Iniciar o server
 ```
-py main.py server
+py snake server
 ```
 Migrar banco de dados
 ```
-py main.py migrate [fresh]
+py snake migrate [fresh]
 ```
 Ajuda geral
 ```
-py main.py help
+py snake help
 ```
 
 
