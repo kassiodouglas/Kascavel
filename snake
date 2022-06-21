@@ -1,0 +1,19 @@
+from cleo.application import Application
+from src.core.commands import *
+from src.core.commands import packages as commands
+
+#Instancia da aplicação
+application = Application()
+
+
+#Instancia os commands instalados
+for comd in commands:
+    method = globals()[comd]
+    application.add(method())
+
+
+#Rodando a aplicação
+if __name__ == "__main__":
+    application.run()    
+    
+    

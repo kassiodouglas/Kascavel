@@ -1,0 +1,35 @@
+{% extends "_kaskavel_/layout/app.html" %}
+
+{% block content %}
+
+<style>
+    :root{
+        --backcolor: #111;
+        --defaultColor: rgb(131, 36, 160);
+    }
+
+    html, body{
+        margin: 0;
+        padding: 0;
+        font-family: 'Quicksand', sans-serif;
+        background-color: var(--backcolor);
+        color: var(--defaultColor);
+    }
+
+    .snake_container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+</style>
+
+<div class='snake_container'>
+    <h1>Admin</h1>    
+</div>
+
+{% endblock %}  
+
+
