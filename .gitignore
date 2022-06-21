@@ -1,0 +1,15 @@
+
+!*/
+!.env.example
+!.gitignore
+!*.MD
+!requirements.txt
+
+@versions
+ENVKASS
+.env.development
+.env.production
+
+*.pyc
+
+test.py
