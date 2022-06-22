@@ -1,15 +1,12 @@
-
+*
 !*/
 !.env.example
 !.gitignore
 !*.MD
 !requirements.txt
 
-@versions
-_VENV
-.env.development
-.env.production
+!src/app/*
+!src/core/*
+!src/resources/*
+!src/routes/*
 
-*.pyc
-
-test.py
