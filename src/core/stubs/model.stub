@@ -1,6 +1,6 @@
 from orator import DatabaseManager, Model
 from src.app.config.database import default
-Model.set_connection_resolver(DatabaseManager(default))
+Model.set_connection_resolver(DatabaseManager(db_default))
 
 class %NAMECLASS%(Model):
 
