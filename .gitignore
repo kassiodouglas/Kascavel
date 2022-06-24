@@ -9,4 +9,7 @@
 !src/core/*
 !src/resources/*
 !src/routes/*
+!src/core/chromedriver/*
+src/core/chromedriver/downloads/*
+src/core/chromedriver/extensions/*
 
