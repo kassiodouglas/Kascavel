@@ -54,7 +54,7 @@ class MakeCommand(Command):
         
     def controller(self, name):               
         type = 'controllers'
-        newdir = Storage.basePath(rf"src\\app\\{type}")
+        newdir = Storage().basePath(rf"src\\app\\{type}")
         
         if( "/" in name): 
             x = self.create_dirs(name, type, newdir)     
@@ -71,7 +71,7 @@ class MakeCommand(Command):
     
     def model(self, name):
         type = 'models'
-        newdir = Storage.basePath(rf"src\\app\\{type}")
+        newdir = Storage().basePath(rf"src\\app\\{type}")
         
         if( "/" in name):
             x = self.create_dirs(name, type, newdir)     
@@ -107,7 +107,7 @@ class MakeCommand(Command):
         
     def command(self, name):
         type = 'commands'
-        newdir = Storage.basePath(rf"src\\core\\{type}")
+        newdir = Storage().basePath(rf"src\\core\\{type}")
         
         if( "/" in name):
             x = self.create_dirs(name, type, newdir)      
