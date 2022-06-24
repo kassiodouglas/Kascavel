@@ -1,6 +1,8 @@
 from orator import DatabaseManager, Model
-from src.app.config.database import default
-Model.set_connection_resolver(DatabaseManager(db_default))
+
+#Conexão do model
+from src.app.configs.database import CONN_DEFAULT
+Model.set_connection_resolver(DatabaseManager(CONN_DEFAULT))
 
 class %NAMECLASS%(Model):
 
