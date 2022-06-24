@@ -3,7 +3,8 @@
 #Lista de pacotes
 packages = [
     'app',
-    'database',    
+    'database', 
+    'log',   
 ]
 
 #Faz o import dos comandos
