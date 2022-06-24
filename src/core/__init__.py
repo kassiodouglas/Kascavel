@@ -5,6 +5,12 @@ packages = [
     'Storage',
     'Environment',
     'Router',
+    'Email',
+    'IA',
+    'Log',
+    'Queue',
+    'Rpa',
+    'Session',    
 ]
 
 #Faz o import dos comandos
