@@ -10,7 +10,8 @@ class CreateTbLogs(Migration):
         with self.schema.create('logs') as table:
             table.increments('id')
             table.timestamps()
-            table.string('Name')
+            table.string('namelog')
+            table.string('text')
 
     def down(self):
         """
