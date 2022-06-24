@@ -19,7 +19,7 @@ class MakeCommand(Command):
         
         
     def get_stub_content(self, type):
-        stub_file = open(Storage.basePath(rf"src\\core\\stubs\\{type}.stub"), 'r+')
+        stub_file = open(Storage().basePath(rf"src\\core\\stubs\\{type}.stub"), 'r+')
         stub_content = stub_file.read()
         stub_file.close()   
         
@@ -27,6 +27,7 @@ class MakeCommand(Command):
     
     
     def create_file(self, name, stub_content):  
+        print(name)
         controler_file = open(rf"{name}.py", 'w+')    
         controler_file.writelines(stub_content)   
         controler_file.close() 
@@ -87,7 +88,9 @@ class MakeCommand(Command):
     
     def config(self, name):
         type = 'configs'
-        newdir = Storage.basePath(rf"src\\app\\{type}")
+        newdir = Storage().basePath(rf"src\\app\\{type}")
+        
+        print(newdir)
         
         if( "/" in name):
             x = self.create_dirs(name, type, newdir)     

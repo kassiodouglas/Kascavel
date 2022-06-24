@@ -14,7 +14,7 @@ class MigrateCommand(Command):
     """
     def handle(self):        
         command_orator = rf"orator migrate"
-        config = " --config=src/app/configs/database.py --path=src/app/database/migrations"
+        config = " --config=src/core/commands/__migrate_db__.py --path=src/app/database/migrations"
         
         if self.option("rollback"):  
             command_orator_toexec = command_orator + rf":rollback"
