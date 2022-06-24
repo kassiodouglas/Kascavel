@@ -233,6 +233,6 @@ class Rpa():
         """Move um arquivo baixado para outro diretorio, utilizado apos waitDownload()"""
         if os.path.isdir(toDir) == False:
             os.makedirs(toDir)
-        self.Log.log(self._config['namelog'],rf'Movendo arquivo para {toDir}')
+        self.Log.log(self._config['namelog'],rf'Movendo arquivo para {toDir}')       
         shutil.move(self.fileToDownload, toDir)
         return self
