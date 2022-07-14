@@ -10,7 +10,8 @@ packages = [
     'Log',
     'Queue',
     'Rpa',
-    'Session',    
+    'Session', 
+    'BundleAssets',   
 ]
 
 #Faz o import dos comandos

@@ -6,8 +6,10 @@
 !requirements.txt
 
 !src/app/*
+!src/app/configs/*
 !src/core/*
 !src/resources/*
+src/resources/assets/.webassets-cache
 !src/routes/*
 !src/core/chromedriver/*
 src/core/chromedriver/downloads/*

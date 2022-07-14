@@ -1,12 +1,13 @@
 from ..core.Router import Router
-from ..app.controllers.InitialController import InitialController
-from ..routes._kaskavel_.web import routes as routes_admin
+from src.app.controllers.InitialController import InitialController
+
 
 
 routes = [
     Router.add("/", InitialController,'initial'),  
 ]
 
-#Rotas administrativas do framework
-routes.extend(routes_admin)
+#Extender rota de outro arquivo
+# from ..routes._kaskavel_.web import routes as routes_admin
+# routes.extend(routes_admin)
     
