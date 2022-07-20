@@ -68,7 +68,7 @@ Iniciar o server
 ```
 py snake server
 ```
-Migrar banco de dados
+Migrar banco de dados (executar migrations)
 ```
 py snake migrate [fresh]
 ```
@@ -76,5 +76,10 @@ Ajuda geral
 ```
 py snake help
 ```
+Popular banco com seeders
+```
+py snake seed
+```
+
 
 
