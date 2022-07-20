@@ -7,6 +7,8 @@ packages = [
     'MakeCommand',
     'MigrateCommand',
     'MigrationCommand',
+    'SeederCommand',
+    'SeedCommand',
 ]
 
 #Faz o import dos comandos

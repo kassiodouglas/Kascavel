@@ -4,6 +4,7 @@ from src.core import Router, BundleAssets
 from src.core.Storage import Storage
 from src.routes import web, api, error
 from flask_assets import Environment, Bundle
+from src.app.configs.app import app as config_app
 
 class ServerCommand(Command):
     """
@@ -19,6 +20,8 @@ class ServerCommand(Command):
             static_folder=Storage().basePath('src/resources/assets'),
             template_folder=Storage().basePath('src/resources/views')
         )     
+        
+        app.config['SECRET_KEY'] = config_app['key']
         
         Router().router(app, web.routes, api.routes, error.routes)
         

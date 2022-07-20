@@ -46,7 +46,7 @@ class MakeCommand(Command):
         for dir in name_split:               
             newdir = dir +  "\\" +newdir  
             
-        newdir = rf"{basepath}\\{type}\\{newdir}"         
+        newdir = rf"{basepath}\\{newdir}"         
         if(os.path.isdir(newdir) == False): os.makedirs(newdir) 
         
         return [newdir, name]          
