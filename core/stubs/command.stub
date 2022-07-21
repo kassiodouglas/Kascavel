@@ -1,0 +1,11 @@
+from cleo.commands.command import Command
+
+class %NAMECLASS%(Command):
+    """
+    Descrição sobre o comando
+
+    %COMMAND%
+        {arg? : description} 
+    """
+    def handle(self):
+        return self.line("Comando executado: %COMMAND%!")

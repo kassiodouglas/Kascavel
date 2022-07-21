@@ -1,17 +1,17 @@
-*
-!*/
-!.env.example
-!.gitignore
-!*.MD
-!requirements.txt
+_VENV
+@versions
 
-!app/*
-!app/configs/*
-!core/*
-!resources/*
-resources/assets/.webassets-cache
-!routes/*
-!core/chromedriver/*
 core/chromedriver/downloads/*
 core/chromedriver/extensions/*
+resources/assets/.webassets-cache
+
+.env.development
+.env.production
+
+test.py
+
+*.pyc
+
+
+
 

@@ -1,0 +1,5 @@
+from orator import Model
+
+class %NAMECLASS%(Model):
+
+    __table__ = '%NAMECLASS%'

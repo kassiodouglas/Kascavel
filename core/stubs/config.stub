@@ -1,0 +1,11 @@
+from core import Environment
+
+#---------------------------------------------
+# Configuração
+# Configure por aqui o que precisar, posteriormente poderá cachear as informações
+#---------------------------------------------
+
+%NAME% = {
+    "key":"value",
+    'key2':Environment.env('ENV_KEY','DEFAULT_KEY'),
+}
