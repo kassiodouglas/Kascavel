@@ -16,5 +16,5 @@ packages = [
 
 #Faz o import dos comandos
 for pkg in packages: 
-    exec( rf"from src.core.{pkg} import {pkg}") 
+    exec( rf"from core.{pkg} import {pkg}") 
 

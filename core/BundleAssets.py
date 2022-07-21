@@ -1,5 +1,5 @@
 from flask_assets import Environment, Bundle
-from src.core.Storage import Storage
+from core.Storage import Storage
 import os
 
 class BundleAssets():
@@ -14,7 +14,7 @@ class BundleAssets():
         
     def listFiles(self, dir):
         list = []
-        pasta = Storage().basePath(rf'src/resources/assets/{dir}')
+        pasta = Storage().basePath(rf'resources/assets/{dir}')
         for diretorio, subpastas, arquivos in os.walk(pasta):
             for arquivo in arquivos:
                 list.append(os.path.join(os.path.realpath(diretorio), arquivo))

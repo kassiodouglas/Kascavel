@@ -5,13 +5,13 @@
 !*.MD
 !requirements.txt
 
-!src/app/*
-!src/app/configs/*
-!src/core/*
-!src/resources/*
-src/resources/assets/.webassets-cache
-!src/routes/*
-!src/core/chromedriver/*
-src/core/chromedriver/downloads/*
-src/core/chromedriver/extensions/*
+!app/*
+!app/configs/*
+!core/*
+!resources/*
+resources/assets/.webassets-cache
+!routes/*
+!core/chromedriver/*
+core/chromedriver/downloads/*
+core/chromedriver/extensions/*
 

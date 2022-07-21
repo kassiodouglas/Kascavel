@@ -8,11 +8,11 @@ class Storage():
     
     def pathStorage(self, dir = ''):
         """Caminho ate pasta storage"""
-        return self.basePath('src\\resources\\assets\\storage\\' + dir)
+        return self.basePath('resources\\assets\\storage\\' + dir)
     
     def pathRpaDownloads(self, dir = ''):
         """Caminho ate pasta de downloads do RPA"""
-        return self.basePath('src\\core\\chromedriver\\downloads\\' + dir)
+        return self.basePath('core\\chromedriver\\downloads\\' + dir)
     
     def file_exists(self, filepath):
         """Verifica se um arquivo existe"""

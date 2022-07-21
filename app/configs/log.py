@@ -1,6 +1,6 @@
-from src.core import Environment
+from core import Environment
 from orator import DatabaseManager 
-from src.app.configs.database import *
+from app.configs.database import *
 
 #---------------------------------------------
 # Configuração de logs

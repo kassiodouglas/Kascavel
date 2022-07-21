@@ -9,6 +9,6 @@ packages = [
 
 #Faz o import dos comandos
 for pkg in packages: 
-    exec( rf"from src.app.configs.{pkg} import *") 
+    exec( rf"from app.configs.{pkg} import *") 
 
 

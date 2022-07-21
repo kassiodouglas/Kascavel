@@ -1,4 +1,4 @@
-from src.core import Environment
+from core import Environment
 
 #---------------------------------------------
 # Configurações da aplicação

@@ -1,13 +1,13 @@
 from operator import imod
 from selenium import webdriver
-from src.core.Storage import Storage
+from core.Storage import Storage
 from selenium.common.exceptions import NoSuchElementException, StaleElementReferenceException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import time
 from selenium.webdriver.common.keys import Keys
-from src.core import Log
+from core import Log
 from pathlib import Path
 import os
 import shutil
@@ -29,7 +29,7 @@ class Rpa():
             options.add_experimental_option(
                 "prefs", 
                 {
-                "download.default_directory": Storage().basePath('src\\core\\chromedriver\\downloads'),
+                "download.default_directory": Storage().basePath('core\\chromedriver\\downloads'),
                 "download.prompt_for_download":  False,
                 "download.directory_upgrade": True,
                 "safebrowsing.enabled": True
@@ -39,7 +39,7 @@ class Rpa():
             
             if(self._config['showBrowser'] == False):   
                 options.add_argument("--headless")      
-            self.driver = webdriver.Chrome(executable_path = 'src\\core\\chromedriver\\chromedriver.exe', chrome_options=options)   
+            self.driver = webdriver.Chrome(executable_path = 'core\\chromedriver\\chromedriver.exe', chrome_options=options)   
             self.windowSize()
             
         except Exception as err:   
